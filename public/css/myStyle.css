@@ -10,7 +10,7 @@ body, html {
 
 .bg-menu {
   color: #fff;
-  background-color: #2b384e;
+  background-color: #ffffff;
 }
 
 .bg-menu .brand {
@@ -31,7 +31,7 @@ body, html {
 }
 
 .bg-menu .navbar .dropdown-menu {
-  background: #2b384e;
+  background: #ffffff;
 }
 
 .bg-white {
