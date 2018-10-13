@@ -1,23 +1,57 @@
 <%layout('./partials/layout')%>
 <body class="bg-menu">
     <form class="form-post" method="POST" action="/service/api/post/forum" id="vue-form">
-        <h1 class="brand">motor</h1>
+        <h1 class="brand" style="color: black">Klima Kage</h1>
         <h4>Create new forum</h4>
-        <label for="title">Title</label>
+        <label for="title" style="color: black">Title</label>
         <input type="text" id="title" name="title" class="form-control" required autofocus>
-        <label for="category">Category</label>
+        <label for="category" style="color: black">Category</label>
         <input type="text" id="categoryText" name="category" class="form-control" readonly>
         <div class="form-row">
             <div class="col-md-8">
-                <select name="addCategory" id="addCategory" class="form-control">
+                <select name="addCategory" id="addCategory" class="form-control" style="color: black">
                     <option v-for="category in categories" v-bind:value="category">{{category}}</option>
                 </select>
             </div>
             <div class="col-md-4">
-                <button type="button" class="btn btn-white btn-block" v-on:click="addtotext">Add category</button>
+                <button type="button" class="btn btn-black btn-block" v-on:click="addtotext" style="color: black">Add category</button>
             </div>
         </div>
-        <button type="submit" class="btn btn-lg btn-block btn-white">Submit</button>
-        <p class="mt-3 mb-3 text-muted">© Team 1 VGU 2018</p>
+        <button type="submit" class="btn btn-lg btn-block btn-black" style="color: black">Submit</button>
+
     </form>
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Klima Kage 2018</p>
+            </div>
+        </div>
+        </div>
+    </footer>
     <script src="/js/components/formControl.js"></script>
