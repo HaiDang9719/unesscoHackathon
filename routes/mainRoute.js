@@ -12,23 +12,31 @@ var loggedin = function (req, res, next) {
   }
 
 router.get('/', function(req,res,next){
-    res.render('index',{title:"welcome to Motor"});
+    res.render('index',{title:"welcome to Klima Kage"});
 });
 
 router.get('/signup', function(req,res,next){
-    res.render('signup',{title:"Motor || Sign Up"});
+    res.render('signup',{title:"Klima Kage || Sign Up"});
 });
 
 router.get('/signin', function(req,res,next){
-    res.render('signin',{title:"Motor || Sign In"});
+    res.render('signin',{title:"Klima Kage || Sign In"});
 });
 
-router.get('/home', loggedin,function(req,res,next){
-    res.render('home',{title:"Motor || Home", user:req.user});
+router.get('/home',function(req,res,next){
+    res.render('home',{title:"Klima Kage || Home", user:req.user});
 });
 
-router.get('/profile',loggedin,function(req,res,next){
-   res.render('profile',{title:"Motor || Profile"});
+router.get('/newDetail',function(req,res,next){
+  res.render('newDetail',{title:"Klima Kage || New Detail", user:req.user});
+});
+
+router.get('/newDetail2',function(req,res,next){
+  res.render('newDetail2',{title:"Klima Kage || New Detail", user:req.user});
+});
+
+router.get('/profile',function(req,res,next){
+   res.render('profile',{title:"Klima Kage || Profile"});
 })
 
 router.get('/logout', function (req, res) {
@@ -37,20 +45,20 @@ router.get('/logout', function (req, res) {
   })
 router.get('/resetPassword',function(req, res)
 {
-    res.render('reset',{ title:"Motor || Reset Password"})
+    res.render('reset',{ title:"Klima Kage || Reset Password"})
 })
 
-router.get('/tech', loggedin,function(req,res,next){
-    res.render('tech',{title:"Motor || Technical support"});
+router.get('/news',function(req,res,next){
+    res.render('news',{title:"Klima Kage || Technical support"});
 });
 router.get('/setPassword', function(req,res){
     var q=url.parse(req.url,true).query;
   var text= jwt.verify(q.token,'passwordtoken');
  // res.send(text)
-  res.render('setPassword',{title:"Motor || Set New Password",user:text})
+  res.render('setPassword',{title:"Klima Kage || Set New Password",user:text})
 })
-router.get('/about', loggedin,function(req,res,next){
-    res.render('about',{title:"Motor || About us"});
+router.get('/about',function(req,res,next){
+    res.render('about',{title:"Klima Kage || About us"});
 });
 
 
