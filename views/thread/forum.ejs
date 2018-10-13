@@ -1,18 +1,21 @@
 <%layout('./partials/threadLayout')%>
-<main>
-    <div class="jumbotron bg-menu m-md-3" style="padding: 5rem 3rem 1rem;">
-        <h1 class="display-4">Forum</h1>
-        <p class="lead">Share, Support, and Thrive</p>
+
+    <div class="jumbotron bg-menu m-md-3" style="padding: 0rem 3rem 1rem;">
+        <div style="position: relative">
+        <img class="" src="../../img/climateChange.jpg" style="width: 100%; height: 350px" alt="Third slide">
+        <h1 class="display-4" style="position: absolute; top: 50%;left: 30%;transform: translate(-50%, -50%);">Forum</h1>
+        <p class="lead" style="position: absolute; top: 65%;left: 30%;transform: translate(-50%, -50%);">Share, Support, and Thrive</p>
+        </div>
     </div>
     <div class="row overflow-hidden" style="padding: 0 5rem;">
         <div class="col col-8">
             <input type="text" name="" id="" placeholder="Search ..." class="form-control">
         </div>
         <div class="col col-2">
-            <a class="btn btn-block btn-white" role="button" onclick="filterToggle();">Advance filter</a>   
+            <a class="btn btn-block btn-white" role="button" onclick="filterToggle();">Advance filter</a>
         </div>
         <div class="col col-2">
-            <a href="/forum/newforum" class="btn btn-block btn-white"><i class="fas fa-plus"></i>  New Forum</a>   
+            <a href="/forum/newforum" class="btn btn-block btn-white"><i class="fas fa-plus"></i>  New Forum</a>
         </div>
     </div>
 
@@ -20,12 +23,12 @@
         <legend class="col-form-label col-sm-2 pt-0">Search for:</legend>
         <div class="col-sm-5">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="type" value="name" id="1sttype" checked> 
-                <label class="form-check-label" for="1sttype">Name</label> 
+                <input class="form-check-input" type="radio" name="type" value="name" id="1sttype" checked>
+                <label class="form-check-label" for="1sttype">Name</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="type" value="category" id="2ndtype"> 
-                <label class="form-check-label" for="2ndtype">Category</label> 
+                <input class="form-check-input" type="radio" name="type" value="category" id="2ndtype">
+                <label class="form-check-label" for="2ndtype">Category</label>
             </div>
         </div>
         <div class="col-sm-5">
@@ -58,5 +61,5 @@
             </tbody>
         </table>
     </div>
-</main>
+
 <script src="/js/components/forumControl.js"></script>

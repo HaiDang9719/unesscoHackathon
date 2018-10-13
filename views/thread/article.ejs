@@ -2,13 +2,16 @@
 <div id="vue-article">
     <div id="vue-content">
             <!-- Cover -->
+
             <div class="jumbotron bg-menu m-md-3" style="padding: 5rem 3rem 1rem;">
-                <h1 class="display-4">Title: {{info.title}}</h1>
-                <p class="lead">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div style="position: relative">
+                    <img class="" src="../../img/climateChange.jpg" style="width: 100%; height: 350px" alt="Third slide">
+                <h1 class="display-4" style="color: black; position: absolute; top: 50%;left: 30%;transform: translate(-50%, -50%);">Title: {{info.title}}</h1>
+
             </div>
 
             <!-- Content -->
-            <div class="container-fluid" style="padding: 3rem 3.5rem 1rem;">
+            <div class="container-fluid" style="padding: 3rem 3.5rem 1rem; color: black">
                 {{info.content}}
             </div>
     </div>
@@ -23,9 +26,9 @@
 
         </div>
         <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle far fa-user-circle" src="/img/user-circle.svg">
-            <div class="media-body comment">
-                <h5 class="mt-0">TuanLD</h5>
+            <img class="d-flex mr-3 rounded-circle far fa-user-circle" src="/img/user-circle.svg" style="background-color: deepskyblue;">
+            <div class="media-body comment" style="color: black">
+                <h5 class="mt-0">AnLT</h5>
                 <p>This is awesome!!!!!</p>
                 <p class="widget">
                     100 <i class="fas fa-angle-up"></i> <i class="fas fa-angle-down"></i>
@@ -34,8 +37,8 @@
             </div>
         </div>
         <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="/img/user-circle.svg"/>
-            <div class="media-body comment">
+            <img class="d-flex mr-3 rounded-circle" src="/img/user-circle.svg" style="background-color: deepskyblue;"/>
+            <div class="media-body comment" style="color: black">
                 <h5 class="mt-0">DangMTH</h5>
 
                 <p>Of course, man.</p>
@@ -45,9 +48,9 @@
                 </p>
                 <br>
                 <div class="media mt-4">
-                    <img class="d-flex mr-3 rounded-circle" src="/img/user-circle.svg"/>
-                    <div class="media-body comment">
-                        <h5 class="mt-0">NhuanND</h5>
+                    <img class="d-flex mr-3 rounded-circle" src="/img/user-circle.svg" style="background-color: deepskyblue;"/>
+                    <div class="media-body comment" style="color: black">
+                        <h5 class="mt-0">Henry</h5>
                         <p>You don't say.</p>
                         <p class="widget">
                             1 <i class="fas fa-angle-up"></i> <i class="fas fa-angle-down"></i>
@@ -56,9 +59,9 @@
                     </div>
                 </div>
                 <div class="media mt-4">
-                    <img class="d-flex mr-3 rounded-circle" src="/img/user-circle.svg"/>
-                    <div class="media-body comment">
-                        <h5 class="mt-0">Hung</h5>
+                    <img class="d-flex mr-3 rounded-circle" src="/img/user-circle.svg" style="background-color: deepskyblue;"/>
+                    <div class="media-body comment" style="color: black">
+                        <h5 class="mt-0">Khanh</h5>
                         <p>Ok</p>
                         <p class="widget">
                             0 <i class="fas fa-angle-up"></i> <i class="fas fa-angle-down"></i>
@@ -84,3 +87,4 @@
 </div>
 
 
+<script src="/js/components/articleControl.js"></script>

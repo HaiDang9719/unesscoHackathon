@@ -5,8 +5,8 @@ var table = new Vue({
     data: {
         id: forumID,
         info: {
-            forumName: document.URL.split('id=')[1],
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            forumName: "Climate Change",
+            description: "How climate change is increasing the threat from tropical storms"
         },
         tableData: []
     },
