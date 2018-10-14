@@ -59,6 +59,7 @@
                                             <script>
                                               function btnClickSend() {
                                                 var datasend = document.getElementById('inputString').value;
+                                                document.getElementById('chatReply').innerHTML = "";
                                                 document.getElementById('chatSend').innerHTML = datasend;
                                                 var flickerAPI = "https://api.susi.ai/susi/chat.json?timezoneOffset=-420&q="+datasend;
                                                 var dataResponse = 'null';
@@ -73,6 +74,7 @@
                                                       dataResponse = data.answers[0].actions[0].expression;
                                                       console.log(data.answers[0].actions[0].expression);
                                                       document.getElementById('chatReply').innerHTML =dataResponse;
+                                                      document.getElementById('inputString').value= "";
                                                     }
                                                     catch{
                                                       document.getElementById('chatReply').innerHTML = "Susi can not reply";
