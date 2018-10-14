@@ -27,6 +27,10 @@ router.get('/home',function(req,res,next){
     res.render('home',{title:"Klima Kage || Home", user:req.user});
 });
 
+router.get('/settings',function(req,res,next){
+  res.render('settings',{title:"Klima Kage || Settings", user:req.user});
+});
+
 router.get('/newDetail',function(req,res,next){
   res.render('newDetail',{title:"Klima Kage || New Detail", user:req.user});
 });
